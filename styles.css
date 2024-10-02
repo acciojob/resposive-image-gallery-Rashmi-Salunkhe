@@ -9,6 +9,7 @@ body {
 }
 
 /* Flexbox container for the gallery */
+/* Flexbox container for the gallery */
 .gallery {
     display: flex;
     flex-wrap: wrap;           /* Allows the images to wrap */
@@ -19,16 +20,16 @@ body {
 
 /* Styling for each image */
 .gallery img {
-    max-width: 25vw;               /* Images take up a maximum of 25% of the viewport width */
-    margin: 10px;                  /* Add margin around the images */
-    border: 3px solid #000;        /* Add a 3px solid black border */
+    max-width: 250px;          /* Use a fixed width of 250px instead of 25vw */
+    margin: 10px;              /* Add margin around the images */
+    border: 3px solid #000;    /* Add a 3px solid black border */
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Add a box shadow */
-    object-fit: cover;             /* Ensure images are proportionally resized */
+    object-fit: cover;         /* Ensure images are proportionally resized */
 }
 
 /* Ensure responsiveness for small devices */
 @media (max-width: 600px) {
     .gallery img {
-        max-width: 45vw;           /* Increase image size for small screens */
+        max-width: 150px;      /* Use a smaller fixed width for small screens */
     }
 }
