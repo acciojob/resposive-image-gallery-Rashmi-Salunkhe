@@ -1,1 +1,40 @@
 /*  your css code here. If applicable */
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Gallery title styling */
+h1 {
+    margin: 20px 0;
+}
+
+/* Flexbox container for the gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;           /* Allows the images to wrap */
+    justify-content: center;   /* Center the images in the container */
+    padding: 10px;
+    gap: 10px;                 /* Creates space between the images */
+}
+
+/* Styling for each image */
+.gallery img {
+    max-width: 25vw;               /* Images take up a maximum of 25% of the viewport width */
+    margin: 10px;                  /* Add margin around the images */
+    border: 3px solid #000;        /* Add a 3px solid black border */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Add a box shadow */
+    object-fit: cover;             /* Ensure images are proportionally resized */
+}
+
+/* Ensure responsiveness for small devices */
+@media (max-width: 600px) {
+    .gallery img {
+        max-width: 45vw;           /* Increase image size for small screens */
+    }
+}
